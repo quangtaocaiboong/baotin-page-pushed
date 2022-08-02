@@ -22,7 +22,6 @@ const Form = () => {
 						<FormLabel> Trụ sở chính: <span style={{color: "black", fontSize: "20px"}}>  Số 561, Phan Đình Phùng, Khóm 3, Phường 6, thành phố Trà  Vinh, tỉnh Trà Vinh. </span></FormLabel>	
 						<FormLabel> Email: <span style={{color: "black", fontSize: "20px"}}> daugiabaotintravinh@gmail.com</span></FormLabel>	
 						<FormLabel> Điện thoại: <span style={{color: "black", fontSize: "20px"}}> 02493. 864668</span></FormLabel>	
-						
 						</FormWrapper>
 					</FormColumn>
 				</FormRow>
