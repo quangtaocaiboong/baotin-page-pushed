@@ -69,6 +69,6 @@ export const FeatureText = styled.p`
 	color: #626881;
 
 	@media screen and (max-width: 768px) {
-		display: none;
+		
 	}
 `;

@@ -38,7 +38,7 @@ function Footer() {
 							{footerSocialData.map((social, index) => (
 								<FooterSocialIcon
 									key={index}
-									href="/"
+									href={social.direct}
 									target="_blank"
 									aria-label={social.name}
 								>
@@ -58,7 +58,8 @@ function Footer() {
 						</FooterLinkItems>
 					))}
 				</FooterGrid>
-				<FooterRights>Bảo Tín Trà Vinh © 2022</FooterRights>
+				<FooterRights>CÔNG TY ĐẤU GIÁ HỢP DANH BẢO TÍN TRÀ VINH © 2022</FooterRights>
+				<p style={{color:'gray', float: 'right', fontSize:'8px'}}>Powered by Quang Huy | Hibernatecat Labs</p>
 			</FooterWrapper>
 		</Section>
 	);

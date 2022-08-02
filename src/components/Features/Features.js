@@ -5,7 +5,6 @@ import {
 	FeatureTitle,
 	FeatureWrapper,
 	FeatureColumn,
-	FeatureImageWrapper,
 	FeatureName,
 	FeatureTextWrapper,
 } from './FeaturesStyles';
@@ -35,9 +34,6 @@ const Features = () => {
 							transition={{ duration: 0.5 + index * 0.1 }}
 							key={index}
 						>
-							<FeatureImageWrapper className={el.imgClass}>
-								{el.icon}
-							</FeatureImageWrapper>
 							<FeatureName>{el.name}</FeatureName>
 							<FeatureText>{el.description}</FeatureText>
 						</FeatureColumn>
