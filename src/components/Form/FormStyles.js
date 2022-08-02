@@ -25,7 +25,7 @@ export const FormColumn = styled.div`
 	border: 20px;
 	/* padding: ${({ small }) => (small ? '0 50px' : '0 15px')}; */
 	flex: 1;
-	max-width: 60%;
+	max-width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;

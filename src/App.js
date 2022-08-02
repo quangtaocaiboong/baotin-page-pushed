@@ -7,7 +7,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import SignUp from './pages/SignupPage';
 import Footer from './components/Footer/Footer';
-
+import News from './pages/News';
 function App() {
 	return (
 		<Router>
@@ -16,6 +16,7 @@ function App() {
 			<Switch>
 				<Route path="/" exact component={Home} />
 				<Route path="/contact" exact component={SignUp} />
+				<Route path="/news" exact component={News} />
 			</Switch>
 			<Footer />
 		</Router>

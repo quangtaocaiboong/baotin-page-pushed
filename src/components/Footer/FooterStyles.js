@@ -28,7 +28,7 @@ export const FooterSubHeading = styled.p`
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
 		sans-serif;
 	margin-bottom: 24px;
-	font-size: 24px;
+	font-size: 14px;
 `;
 
 export const FooterRow = styled(Row)`
@@ -70,7 +70,7 @@ export const FooterColumn = styled(Column)`
 
 export const FooterSubText = styled.p`
 	margin-bottom: 24px;
-	font-size: 20px;
+	font-size: 1px;
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -105,10 +105,10 @@ export const FooterLink = styled(Link)`
 	color: #fff;
 	text-decoration: none;
 	margin-bottom: 0.5rem;
-
+	font-size: 0.75rem;
 	&:hover {
-		color: #0467fb;
-		transition: 0.3s ease-out;
+		// color: #0467fb;
+		// transition: 0.3s ease-out;
 	}
 `;
 

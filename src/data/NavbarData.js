@@ -5,6 +5,10 @@ export const data = [
 		id: 'about',
 	},
 	{
+		to: '/news',
+		text: 'Thông Tin Đấu Giá',
+	},
+	{
 		to: '/contact',
 		text: 'Liên Hệ',
 	},
