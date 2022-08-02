@@ -42,7 +42,7 @@ export const NewsSection = ({
   }, [inView, animation]);
 
   return (
-    
+
     <Section inverse={inverse} ref={ref}>
       <Container>
         <NewsRow reverse={reverse}>
@@ -95,7 +95,7 @@ export const NewsSection = ({
             </ImgWrapper>
           </NewsColumn>
         </NewsRow>
-        <div style={{ marginTop: "20px", marginRight: "auto", marginLeft: "auto", }}>
+        <div style={{ marginTop: "20px", marginRight: "auto", marginLeft: "auto", display:"flex", justifyContent: "center" }}>
           <Img src={imgDec1} alt="" />
           <Img src={imgDec2} alt="" />
         </div>

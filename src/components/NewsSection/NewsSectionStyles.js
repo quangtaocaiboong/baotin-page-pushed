@@ -71,7 +71,7 @@ export const TopLine = styled(motion.div)`
 export const Img = styled(motion.img)`
 	padding-right: 0;
 	border: 0;
-	max-width: 100%;
+	max-width: 60%;
 	vertical-align: middle;
 	display: inline-block;
 	object-fit: cover;
