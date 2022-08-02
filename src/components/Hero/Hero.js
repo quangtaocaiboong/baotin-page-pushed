@@ -13,11 +13,8 @@ const Hero = () => {
 					ĐẢM BẢO LÂU DÀI – UY TÍN MÃI MÃI
 				</HeroText>
 				<ButtonWrapper>
-					<Link to="signup">
-						{/* <Button>Get Started</Button> */}
-					</Link>
 					<HeroButton>
-						<Link to="signup">
+						<Link to="contact">
 							<Button> Tìm Hiểu Thêm </Button>
 						</Link>
 
