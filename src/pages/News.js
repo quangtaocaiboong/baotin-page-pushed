@@ -1,6 +1,6 @@
 import React from 'react'
 import { NewsSection } from '../components/NewsSection/NewsSection'
-import {  newsTwo, } from '../data/NewsData';
+import {  newsTwo } from '../data/NewsData';
 
 const News = () => {
   const {linkTo} = newsTwo
