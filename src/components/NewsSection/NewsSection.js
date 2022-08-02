@@ -24,7 +24,8 @@ export const NewsSection = ({
   inverse,
   reverse,
   data,
-  linkTo
+  linkTo,
+  dateNote,
 }) => {
   const initial = { opacity: 0, y: 30 };
   const animation = useAnimation();
@@ -63,14 +64,17 @@ export const NewsSection = ({
               >
                 {headline}
               </Heading>
+              
               <Subtitle
                 initial={initial}
                 // transition={{ delay: 0.7, duration: 0.6 }}
                 animate={animation}
                 inverse={inverse}
+                style={{marginBottom:"10px"}}
               >
                 {description}
               </Subtitle>
+              <h5 style={{ marginBottom:"30px", color: "white" }}>{dateNote}</h5>
               <a href={linkTo}
                 className="linkTST"
                 target="_blank"

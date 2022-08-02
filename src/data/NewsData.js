@@ -33,6 +33,7 @@ export const newsTwo = {
 	start: 'true',
 	imgDec1: newsPDF,
 	imgDec2: newsPDF2,
+	dateNote: "Thời gian tổ chức: 14:00 19/09/2022"
 };
 
 export const newsThree = {
