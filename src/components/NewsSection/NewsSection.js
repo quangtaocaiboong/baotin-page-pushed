@@ -99,7 +99,7 @@ export const NewsSection = ({
             </ImgWrapper>
           </NewsColumn>
         </NewsRow>
-        <div style={{ marginTop: "20px", marginRight: "auto", marginLeft: "auto", display:"flex", justifyContent: "center" }}>
+        <div style={{ marginTop: "20px", marginRight: "5px", marginLeft: "5px", display:"flex", justifyContent: "center" }}>
           <Img src={imgDec1} alt="" />
           <Img src={imgDec2} alt="" />
         </div>

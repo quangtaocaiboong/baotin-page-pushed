@@ -69,6 +69,7 @@ export const TopLine = styled(motion.div)`
 `;
 
 export const Img = styled(motion.img)`
+	margin-top:20px;
 	padding-right: 0;
 	border: 0;
 	max-width: 60%;
