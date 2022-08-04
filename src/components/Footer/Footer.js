@@ -58,8 +58,8 @@ function Footer() {
 						</FooterLinkItems>
 					))}
 				</FooterGrid>
-				<FooterRights>CÔNG TY ĐẤU GIÁ HỢP DANH BẢO TÍN TRÀ VINH © 2022</FooterRights>
-				<p style={{color:'gray', float: 'right', fontSize:'8px'}}>Powered by Quang Huy | Hibernatecat Labs</p>
+				<FooterRights>CÔNG TY ĐẤU GIÁ HỢP DANH BẢO TÍN TRÀ VINH © 2022 | All rights reserved.</FooterRights>
+				<p style={{color:'gray', float: 'right', fontSize:'8px'}}>Powered by Quang Huy © Hibernatecat Labs</p>
 			</FooterWrapper>
 		</Section>
 	);
