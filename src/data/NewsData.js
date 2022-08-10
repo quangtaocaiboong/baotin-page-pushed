@@ -3,18 +3,24 @@ import newsImage2 from "../assets/newsTwoImg.jpeg"
 // import newsImage3 from "../assets/newsThreeImg.jpeg"
 import newsPDF from "../assets/newsPDF.png"
 import newsPDF2 from "../assets/newsPDF2.png"
+import newsPDFOne1 from "../assets/newsPDFOne1.png"
+import newsPDFOne2 from "../assets/newsPDFOne2.png"
 export const newsOne = {
 	reverse: true,
 	inverse: true,
 	topLine: {
-		text: 'Thành lập vào năm 2016',
+		text: 'Thông Tin Đấu Giá',
 	},
-	headline: "Chúng tôi luôn trân trọng sự hợp tác của các Đối tác và Quý Khách hàng trong mọi phương diện",
-	description: 'Chất lượng dịch vụ hàng đầu, phương châm làm việc của Công ty Đấu Giá Hợp Danh Bảo Tín Trà Vinh đã nêu lên được hiệu quả, trách nhiệm và tinh thần hợp tác với Quý khách hàng',
-	buttonLabel: 'Liên hệ với chúng tôi',
-	imgStart: 'start',
+	headline: "THÔNG BÁO VIỆC ĐẤU GIÁ QUYỀN SỬ DỤNG ĐẤT",
+	description: 'TỔ CHỨC BÁN ĐẤU GIÁ TÀI SẢN DO CHI CỤC THI HÀNH ÁN DÂN SỰ THÀNH PHỐ TRÀ VINH',
+	buttonLabel: 'Thông Tin Thêm >',
+	linkToOne: '',
 	img: newsImage2,
+	imgDecOne1:newsPDFOne1,
+	imgDecOne2:newsPDFOne2,
 	start: 'true',
+	dateNote: "Thời gian tổ chức: 9:00 12/08/2022"
+
 };
 
 export const newsTwo = {

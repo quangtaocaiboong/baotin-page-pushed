@@ -13,7 +13,38 @@ export const NewsRow = styled.div`
 		flex-direction: column-reverse;
 	}
 `;
+export const H5Style = styled.h5`
+	color: ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
 
+`
+export const ButtonAnchor = styled.a`
+	text-decoration: none;
+	height: 3rem;
+	padding: 16px 32px;
+	font-weight: 700;
+	font-size: 0.8rem;
+	line-height: 18px;
+	cursor: pointer;
+	background: none;
+	color: ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
+
+	border-radius: 4px;
+	white-space: nowrap;
+	padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
+	font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+	outline: none;
+	border: 2px solid ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+
+
+
+	&:hover {
+		color: ${({ inverse }) => (inverse ? 'white' : '#0c4577')};
+		background-color: ${({ inverse }) => (inverse ? '#0c4577' : 'white')};
+	}
+`
 export const NewsColumn = styled(motion.div)`
 	margin-bottom: 15px;
 	padding-right: 15px;

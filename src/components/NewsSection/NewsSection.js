@@ -9,10 +9,11 @@ import {
   ImgWrapper,
   Img,
   NewsColumn,
+  H5Style,
+  ButtonAnchor
 } from './NewsSectionStyles.js';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
-import "./NewsSection.scss"
 export const NewsSection = ({
   primary,
   topLine,
@@ -26,12 +27,14 @@ export const NewsSection = ({
   data,
   linkTo,
   dateNote,
+  alterImg1,
+  alterImg2,
 }) => {
   const initial = { opacity: 0, y: 30 };
   const animation = useAnimation();
 
   const { ref, inView } = useInView({ threshold: 0.2 });
-  const { imgDec1, imgDec2 } = data;
+  // const { imgDec1, imgDec2 } = data;
 
   useEffect(() => {
     if (inView) {
@@ -64,24 +67,26 @@ export const NewsSection = ({
               >
                 {headline}
               </Heading>
-              
+
               <Subtitle
                 initial={initial}
                 // transition={{ delay: 0.7, duration: 0.6 }}
                 animate={animation}
                 inverse={inverse}
-                style={{marginBottom:"10px"}}
+                style={{ marginBottom: "10px" }}
               >
                 {description}
               </Subtitle>
-              <h5 style={{ marginBottom:"30px", color: "white" }}>{dateNote}</h5>
-              <a href={linkTo}
-                className="linkTST"
+              <H5Style
+                inverse={inverse}
+                style={{ marginBottom: "30px" }}>{dateNote}</H5Style>
+              <ButtonAnchor href={linkTo}
+                inverse={inverse}
                 target="_blank"
                 rel='noopener noreferrer'
               >
                 {buttonLabel}
-              </a>
+              </ButtonAnchor>
             </TextWrapper>
           </NewsColumn>
           <NewsColumn
@@ -99,9 +104,9 @@ export const NewsSection = ({
             </ImgWrapper>
           </NewsColumn>
         </NewsRow>
-        <div style={{ marginTop: "20px", marginRight: "5px", marginLeft: "5px", display:"flex", justifyContent: "center" }}>
-          <Img src={imgDec1} alt="" />
-          <Img src={imgDec2} alt="" />
+        <div style={{ marginTop: "20px", marginRight: "5px", marginLeft: "5px", display: "flex", justifyContent: "center" }}>
+          <Img src={alterImg1} alt="" />
+          <Img src={alterImg2} alt="" />
         </div>
       </Container>
 
