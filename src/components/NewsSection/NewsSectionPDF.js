@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Section } from "../../globalStyles";
 import {
   NewsRow,
@@ -14,7 +14,8 @@ import {
 } from "./NewsSectionStyles.js";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
-export const NewsSection = ({
+export const NewsSectionPDF = ({
+  primary,
   topLine,
   headline,
   description,
@@ -23,11 +24,10 @@ export const NewsSection = ({
   alt,
   inverse,
   reverse,
-  data,
   linkTo,
   dateNote,
-  alterImg1,
-  alterImg2,
+  fileUrl,
+  pdf
 }) => {
   const initial = { opacity: 0, y: 30 };
   const animation = useAnimation();
@@ -43,7 +43,8 @@ export const NewsSection = ({
       });
     }
   }, [inView, animation]);
-
+ 
+  // console.log(pdf);
   return (
     <Section inverse={inverse} ref={ref}>
       <Container>
@@ -79,9 +80,9 @@ export const NewsSection = ({
                 {dateNote}
               </H5Style>
               <ButtonAnchor
-                href={linkTo}
-               
+                href={pdf}
                 inverse={inverse}
+                download
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -104,7 +105,7 @@ export const NewsSection = ({
             </ImgWrapper>
           </NewsColumn>
         </NewsRow>
-        <div
+        {/* <div
           style={{
             marginTop: "20px",
             marginRight: "5px",
@@ -113,8 +114,30 @@ export const NewsSection = ({
             justifyContent: "center",
           }}
         >
-          <Img src={alterImg1} alt="" />
-          <Img src={alterImg2} alt="" />
+          <object
+            data="http://africau.edu/images/default/sample.pdf"
+            type="application/pdf"
+            width="100%"
+            height="100%"
+          >
+            <p>
+              Alternative text - include a link{" "}
+              <a href="http://africau.edu/images/default/sample.pdf">
+                to the PDF!
+              </a>
+            </p>
+          </object>
+        </div> */}
+        <div className="" style={{ marginTop: "20px" }}>
+
+        <object
+          width="100%"
+          height="842"
+          data={pdf}
+          type="application/pdf"
+        >
+          {" "}
+        </object>
         </div>
       </Container>
     </Section>
