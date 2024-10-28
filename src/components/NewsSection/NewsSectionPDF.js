@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Container, Section } from "../../globalStyles";
 import {
   NewsRow,
@@ -14,26 +14,25 @@ import {
 } from "./NewsSectionStyles.js";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
-export const NewsSectionPDF = ({
-  primary,
-  topLine,
-  headline,
-  description,
-  buttonLabel,
-  img,
-  alt,
-  inverse,
-  reverse,
-  linkTo,
-  dateNote,
-  fileUrl,
-  pdf
-}) => {
+
+export const NewsSectionPDF = ({ item }) => {
+  // Destructure properties from the item
+  const {
+    topLine,
+    headline,
+    description,
+    buttonLabel,
+    img,
+    alt,
+    inverse,
+    reverse,
+    pdf,
+    dateNote,
+  } = item;
+
   const initial = { opacity: 0, y: 30 };
   const animation = useAnimation();
-
   const { ref, inView } = useInView({ threshold: 0.2 });
-  // const { imgDec1, imgDec2 } = data;
 
   useEffect(() => {
     if (inView) {
@@ -43,8 +42,7 @@ export const NewsSectionPDF = ({
       });
     }
   }, [inView, animation]);
- 
-  // console.log(pdf);
+
   return (
     <Section inverse={inverse} ref={ref}>
       <Container>
@@ -53,23 +51,19 @@ export const NewsSectionPDF = ({
             <TextWrapper>
               <TopLine
                 initial={initial}
-                // transition={{ delay: 0.3, duration: 0.6 }}
                 animate={animation}
               >
                 {topLine.text}
               </TopLine>
               <Heading
                 initial={initial}
-                // transition={{ delay: 0.5, duration: 0.6 }}
                 animate={animation}
                 inverse={inverse}
               >
                 {headline}
               </Heading>
-
               <Subtitle
                 initial={initial}
-                // transition={{ delay: 0.7, duration: 0.6 }}
                 animate={animation}
                 inverse={inverse}
                 style={{ marginBottom: "10px" }}
@@ -92,7 +86,6 @@ export const NewsSectionPDF = ({
           </NewsColumn>
           <NewsColumn
             initial={initial}
-            // transition={{ delay: 0.5, duration: 0.6 }}
             animate={animation}
           >
             <ImgWrapper>
@@ -105,39 +98,18 @@ export const NewsSectionPDF = ({
             </ImgWrapper>
           </NewsColumn>
         </NewsRow>
-        {/* <div
-          style={{
-            marginTop: "20px",
-            marginRight: "5px",
-            marginLeft: "5px",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
+        <div className="" style={{ marginTop: "20px" }}>
           <object
-            data="http://africau.edu/images/default/sample.pdf"
-            type="application/pdf"
             width="100%"
-            height="100%"
+            height="842"
+            data={pdf}
+            type="application/pdf"
           >
             <p>
               Alternative text - include a link{" "}
-              <a href="http://africau.edu/images/default/sample.pdf">
-                to the PDF!
-              </a>
+              <a href={pdf}>to the PDF!</a>
             </p>
           </object>
-        </div> */}
-        <div className="" style={{ marginTop: "20px" }}>
-
-        <object
-          width="100%"
-          height="842"
-          data={pdf}
-          type="application/pdf"
-        >
-          {" "}
-        </object>
         </div>
       </Container>
     </Section>
