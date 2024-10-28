@@ -35,7 +35,7 @@ const News = () => {
           />
         )
       )}
-      <NewsSection
+      {/* <NewsSection
         {...newsOne}
         data={newsTwo}
         linkTo={linkToOne}
@@ -48,7 +48,7 @@ const News = () => {
         linkTo={linkTo}
         alterImg1={imgDec1}
         alterImg2={imgDec2}
-      />
+      /> */}
     </>
   );
 };

@@ -6,8 +6,8 @@ import newsPDF2 from "../assets/newsPDF2.png";
 import newsPDFOne1 from "../assets/newsPDFOne1.png";
 import newsPDFOne2 from "../assets/newsPDFOne2.png";
 
-import pdf1 from "../assets/pdf/KQLT_Truong-Nguyen-Van-Hai-31-07-2023.pdf";
-import pdf2 from "../assets/pdf/Quyet-dinh-873-qd-bvdk-vv-phe-duyet-ket-qua-lua-chon-don-vi-to-chuc-dau-gia-tai-san.pdf";
+import pdf1 from "../assets/pdf/TBDG 92_Benh vien Cai Lay_Nha xe 2 banh.pdf";
+import pdf2 from "../assets/pdf/TB 93_Benh vien DKKV Cau Ngang_Nha xe.pdf";
 import pdf3 from "../assets/pdf/TB-so-1337-TB-TTYT-Chau-Thanh-Bên-Tre.pdf";
 import pdf4 from "../assets/pdf/TB18.-ket-qua-lua-to-chuc-dau-gia_BV-Ca-Mau.pdf";
 import pdf5 from "../assets/pdf/Thong-bao-57_5-xe-khac_So-tai-chinh-Tra-Vinh.pdf";
@@ -20,49 +20,49 @@ export const newsOne = {
   reverse: true,
   inverse: true,
   topLine: {
-    text: "Thông Tin Đấu Giá",
+    text: "Thông Tin",
   },
-  headline: "THÔNG BÁO VIỆC ĐẤU GIÁ QUYỀN SỬ DỤNG ĐẤT",
+  headline: "BỆNH VIỆN ĐA KHOA KHU VỰC CAI LẬY",
   description:
-    "TỔ CHỨC BÁN ĐẤU GIÁ TÀI SẢN DO CHI CỤC THI HÀNH ÁN DÂN SỰ THÀNH PHỐ TRÀ VINH",
+    "Cho thuê mặt bằng nhà xe 2 bánh của Bệnh viện Đa khoa khu vực Cai Lậy",
   buttonLabel: "Thông Tin Thêm >",
   linkToOne: "",
   img: newsImage2,
   imgDecOne1: newsPDFOne1,
   imgDecOne2: newsPDFOne2,
   start: "true",
-  dateNote: "Thời gian tổ chức: 9:00 12/08/2022",
+  dateNote: "",
 };
 export const newsPDFOne = {
   reverse: true,
   inverse: true,
   topLine: {
-    text: "Thông Tin Đấu Giá",
+    text: "Thông Tin",
   },
-  headline: "THÔNG BÁO VIỆC ĐẤU GIÁ QUYỀN SỬ DỤNG ĐẤT",
+  headline: "BỆNH VIỆN ĐA KHOA KHU VỰC CẦU NGANG",
   description:
-    "TỔ CHỨC BÁN ĐẤU GIÁ TÀI SẢN DO CHI CỤC THI HÀNH ÁN DÂN SỰ THÀNH PHỐ TRÀ VINH",
-  buttonLabel: "Tải về >",
+    "Cho thuê mặt bằng nhà xe của Bệnh viện Đa khoa khu vực Cầu Ngang",
+  buttonLabel: "Thông Tin Thêm >",
   linkToOne: "",
   img: newsImage2,
   imgDecOne1: newsPDFOne1,
   imgDecOne2: newsPDFOne2,
   start: "true",
-  dateNote: "Thời gian tổ chức: 9:00 12/08/2022",
+  dateNote: "",
 };
 
 export const newsTwo = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "Thông Tin Đấu Giá",
+    text: "Thông Tin",
   },
-  headline: "THÔNG BÁO VIỆC ĐẤU GIÁ ĐỐI VỚI DANH MỤC TÀI SẢN",
+  headline: "BỆNH VIỆN ĐA KHOA KHU VỰC CẦU NGANG",
   description:
-    "MẶT BẰNG CHO THUÊ VĂN PHÒNG ĐÀO TẠO NGHỀ (VĂN PHÒNG LÀM VIỆC 4)",
+    "Cho thuê mặt bằng nhà xe của Bệnh viện Đa khoa khu vực Cầu Ngang",
   buttonLabel: "Tìm Hiểu Thêm >",
   linkTo:
-    "https://dgts.moj.gov.vn/thong-bao-cong-khai-viec-dau-gia/mat-bang-cho-thue-van-phong-dao-tao-nghe-van-phong-lam-viec-4-149015.html",
+    "#",
   imgStart: "start",
   img: newsImage2,
   start: "true",
@@ -74,13 +74,13 @@ export const newsPDFTwo = {
   reverse: false,
   inverse: false,
   topLine: {
-    text: "Thông Tin Đấu Giá",
+    text: "Thông Tin",
   },
   headline: "THÔNG BÁO VIỆC ĐẤU GIÁ ĐỐI VỚI DANH MỤC TÀI SẢN",
   description: "",
   buttonLabel: "Tải về >",
   linkTo:
-    "https://dgts.moj.gov.vn/thong-bao-cong-khai-viec-dau-gia/mat-bang-cho-thue-van-phong-dao-tao-nghe-van-phong-lam-viec-4-149015.html",
+    "#",
   imgStart: "start",
   img: newsImage2,
   start: "true",
